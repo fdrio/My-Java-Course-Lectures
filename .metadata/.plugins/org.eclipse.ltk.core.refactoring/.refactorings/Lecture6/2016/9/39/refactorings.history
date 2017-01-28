@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;largest&apos; in &apos;ArraySetLong.min()&apos; to &apos;smallest&apos;&#x0A;- Original project: &apos;Lecture6&apos;&#x0A;- Original element: &apos;ArraySetLong.min().largest&apos;&#x0A;- Renamed element: &apos;largest&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;largest&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{ArraySetLong.java[ArraySetLong~min@largest!1338!1367!1343!1349!J!0!false" name="smallest" references="true" stamp="1474398157560" version="1.0"/>
+</session>

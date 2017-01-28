@@ -1,0 +1,197 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class ContactMeGui extends JFrame
+{
+	private static final int WIDTH = 400;
+	private static final int HEIGHT = 300;
+
+	private JLabel emailL, passwordL,reEnterPassL, messageL;
+	private JTextField completeNameTF,emailTF, reEnterPasswordTF;
+	private JTextField emailTF,PasswordTF;
+	private JButton sendB, exitB, clearB;
+
+	private SendButtonHandler sbHandler;
+	private ExitButtonHandler ebHandler;
+	private ClearButtonHandler cbHandler;
+
+	private JMenuBar  menuBar;
+	private JMenu make;
+	private JMenuItem byEmail;
+	private JMenuItem byRegularMail;
+	private JMenuItem byCellPhone;
+	private JMenuItem byFax;
+	private JLabel CompleteNameLabel;
+	private JTextField additionalInfoTF;
+	private JRadioButton female;
+	private JRadioButton male;
+	private ButtonGroup group;
+
+	public ContactMeGui()
+	{
+		CompleteNameLabel = new JLabel("Complete Name");
+		CompleteNameLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		getContentPane().add(CompleteNameLabel);
+		
+		emailL = new JLabel("Email: ", SwingConstants.CENTER);
+		passwordL = new JLabel("Password: ", SwingConstants.CENTER);
+		
+		reEnterPassL= new JLabel("Re-enter Password: ", SwingConstants.CENTER);
+		messageL = new JLabel("Addtional Info: ", SwingConstants.CENTER);
+		
+		sbHandler = new SendButtonHandler();
+		ebHandler = new ExitButtonHandler();
+		cbHandler = new ClearButtonHandler();
+				
+
+		setTitle("Registration Form");
+		Container pane = getContentPane();
+		pane.setLayout(new GridLayout(8, 3));
+
+	
+		completeNameTF = new JTextField();
+		pane.add(completeNameTF);
+		
+
+		//Add things to the pane in the order you want them to appear (left to right, top to bottom)
+		pane.add(emailL);
+		emailTF = new JTextField();
+		pane.add(emailTF);
+		pane.add(passwordL);
+		PasswordTF = new JPasswordField();
+		pane.add(PasswordTF);
+		pane.add(reEnterPassL);
+		reEnterPasswordTF = new JPasswordField();
+		pane.add(reEnterPasswordTF);
+		pane.add(messageL);
+
+		additionalInfoTF = new JTextField();
+		pane.add(additionalInfoTF);
+		additionalInfoTF.setColumns(10);
+		
+		female = new JRadioButton("Female");
+		female.setHorizontalAlignment(SwingConstants.CENTER);
+		
+		getContentPane().add(female);
+
+		male = new JRadioButton("Male");
+		male.setHorizontalAlignment(SwingConstants.CENTER);
+		getContentPane().add(male);
+		group = new ButtonGroup();
+		group.add(female);
+		group.add(male);
+
+
+		menuBar = new JMenuBar();
+		make = new JMenu("            Contact Me                 ");
+		byEmail = new JMenuItem("by Email");
+		byFax = new JMenuItem("by Fax");
+		byRegularMail = new JMenuItem("by Regular Mail");
+		byCellPhone = new JMenuItem("by Cell Phone");
+		
+		menuBar.add(make);
+		make.add(byEmail);
+		make.add(byFax);
+		make.add(byRegularMail);
+		make.add(byCellPhone);
+
+		pane.add(menuBar);
+
+		exitB = new JButton("Exit");
+		exitB.addActionListener(ebHandler);
+
+		clearB = new JButton("Clear");
+		clearB.addActionListener(cbHandler);
+
+		pane.add(clearB);
+
+		//SPecify handlers for each button and add (register) ActionListeners to each button.
+		sendB = new JButton("Send");
+		sendB.addActionListener(sbHandler);
+		pane.add(sendB);
+		pane.add(exitB);
+
+		setSize(WIDTH, HEIGHT);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	private class SendButtonHandler implements ActionListener
+	{
+		public void actionPerformed(ActionEvent e)
+		{
+			//We use the getText & setText methods to manipulate the data entered into those fields.
+			String inputEmail= emailTF.getText();
+			String inputPassword= emailTF.getText();
+			String reinputPassword= PasswordTF.getText();
+			String inputMessage= reEnterPasswordTF.getText();
+
+
+			if(inputEmail.equals("") || inputPassword.equals("") || reinputPassword.equals("")){
+
+				//Display error message
+				JOptionPane.showMessageDialog(null,
+						"Wrong input. Rememeber to fill all the spaces",
+						"Something is missing!!!",
+						JOptionPane.WARNING_MESSAGE);
+			}
+			
+			else if (inputEmail.contains("@") && inputEmail.contains(".")){
+				JOptionPane.showMessageDialog(null, " Email address is wrong!");
+			}
+
+			//the password is too long
+			else if(inputPassword.length() > 11){
+				JOptionPane.showMessageDialog(null,"Wrong password. Rememeber it is 10 characters long",
+						"Wrong Password Input!!!", JOptionPane.WARNING_MESSAGE);
+			}
+
+			//the message is too long
+			else if(inputMessage.length() > 81){
+				JOptionPane.showMessageDialog(null,"Wrong Message. Rememeber it is 80 characters long",
+						"Wrong Message Input!!!", JOptionPane.WARNING_MESSAGE);
+			}
+			else if(!PasswordTF.equals(reEnterPasswordTF)){
+				JOptionPane.showMessageDialog(null, "Password Mismatch");
+				
+				
+			}
+			
+			//all is correct
+			else
+			{
+				JOptionPane.showMessageDialog(null,
+						"Your message has been sent.");
+			}
+
+			//massageTF.setText("" + area);
+		}
+	}
+	
+	public class ClearButtonHandler implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+			completeNameTF.setText("");
+			emailTF.setText("");
+			PasswordTF.setText("");
+			reEnterPasswordTF.setText("");
+			additionalInfoTF.setText("");
+			
+			
+		}
+	}
+
+	public class ExitButtonHandler implements ActionListener
+	{
+		public void actionPerformed(ActionEvent e)
+		{
+			System.exit(0);
+		}
+	}
+	
+
+	public static void main(String[] args)
+	{
+		ContactMeGui contactMe = new ContactMeGui();
+	}
+}

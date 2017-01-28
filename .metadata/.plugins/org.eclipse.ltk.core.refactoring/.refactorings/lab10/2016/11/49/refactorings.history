@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 5 elements to &apos;lab10/src&apos;&#x0A;- Original project: &apos;lab10&apos;&#x0A;- Destination element: &apos;lab10/src&apos;&#x0A;- Original elements:&#x0A;     RecursiveTree.java&#x0A;     RecTreeMain.java&#x0A;     RecursionExample1.java&#x0A;     RecursiveSets.java&#x0A;     Tree.java&#x0A;- Update references to refactored element" description="Move files" destination="/src" element1="RecursiveTree.java" element2="RecTreeMain.java" element3="RecursionExample1.java" element4="RecursiveSets.java" element5="Tree.java" files="5" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1480463621572" units="0" version="1.0"/>
+</session>

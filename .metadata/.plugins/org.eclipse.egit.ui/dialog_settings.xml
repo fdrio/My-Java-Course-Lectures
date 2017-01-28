@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="0" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<item value="600" key="DIALOG_WIDTH"/>
+	<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
+	<item value="true" key="CommitDialog.showUntracked"/>
+	<item value="/Users/francisco/git/MockExam3/.git" key="GitSelectRepositoryPage.lastRepository"/>
+	<item value="523" key="DIALOG_HEIGHT"/>
+	<item value="330" key="DIALOG_X_ORIGIN"/>
+	<item value="50" key="DIALOG_Y_ORIGIN"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/franciscodiaz11/EclipseTutorial.git"/>
+		<item value="https://github.com/franciscodiaz11/CashierProgram.git"/>
+		<item value="https://github.com/pedrorivera40/CashierProgram.git"/>
+		<item value="https://github.com/franciscodiaz11/lab10.git"/>
+		<item value="https://github.com/franciscodiaz11/ShortestPath.git"/>
+		<item value="https://github.com/franciscodiaz11/MockExam3.git"/>
+		<item value="https://github.com/franciscodiaz11/UpdatedPrimeCounter.git"/>
+		<item value="https://github.com/Fall2016-CIIC4010/CIIC4010-Lecture7.git"/>
+		<item value="https://github.com/franciscodiaz11/ContactMeGui.git"/>
+		<item value="https://github.com/franciscodiaz11/Lab7.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="franciscodiaz11 &lt;frco3190@gmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="franciscodiaz11 &lt;frco3190@gmail.com&gt;"/>
+	</list>
+	<section name="GitImportWizard">
+		<item value="true" key="GitProjectsImportPage.STORE_NESTED_PROJECTS"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item value="650" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
+		<item value="440" key="DIALOG_HEIGHT"/>
+		<item value="313" key="DIALOG_X_ORIGIN"/>
+		<item value="107" key="DIALOG_Y_ORIGIN"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.pull.PullResultDialog.dialogBounds">
+		<item value="464" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
+		<item value="283" key="DIALOG_HEIGHT"/>
+		<item value="479" key="DIALOG_X_ORIGIN"/>
+		<item value="272" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.egit.ui.COMMIT_DIALOG_SECTION">
+		<item value="626" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
+		<item value="623" key="DIALOG_HEIGHT"/>
+		<item value="-55" key="DIALOG_X_ORIGIN"/>
+		<item value="-268" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="/Users/francisco/git/F16_CIIC4010_Lab3/.git">
+			<item value="empty"/>
+		</list>
+		<list key="/Users/francisco/git/.git">
+			<item value="empty"/>
+		</list>
+		<list key="/Users/francisco/git/MineSweeper/.git">
+			<item value="empty"/>
+		</list>
+		<list key="/Users/francisco/git/CIIC4010-Lecture3/.git">
+			<item value="empty"/>
+		</list>
+		<list key="/Users/francisco/Documents/EclipseFiles /MockExam1/.git">
+			<item value="empty"/>
+		</list>
+		<list key="/Users/francisco/git/MineSweeperApp/.git">
+			<item value="empty"/>
+		</list>
+		<list key="/Users/francisco/git/ShortestPath/.git">
+			<item value="empty"/>
+		</list>
+		<list key="/Users/francisco/git/CashierProgram/.git">
+			<item value="empty"/>
+		</list>
+		<list key="/Users/francisco/git/EclipseTutorial/.git">
+			<item value="false"/>
+			<item value="franciscodiaz11 &lt;frco3190@gmail.com&gt;"/>
+			<item value="Second Commit"/>
+			<item value="franciscodiaz11 &lt;frco3190@gmail.com&gt;"/>
+			<item value="f3ef06408ed51c8f873ea434cb7020bb159b5d29"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.fetch.FetchResultDialog.dialogBounds">
+		<item value="600" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
+		<item value="440" key="DIALOG_HEIGHT"/>
+		<item value="330" key="DIALOG_X_ORIGIN"/>
+		<item value="105" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.dialogs.MergeTargetSelectionDialog.dialogBounds">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
+		<item value="686" key="DIALOG_HEIGHT"/>
+		<item value="378" key="DIALOG_X_ORIGIN"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="true" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

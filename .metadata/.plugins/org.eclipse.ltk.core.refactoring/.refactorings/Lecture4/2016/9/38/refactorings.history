@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;MyComponent&apos; to &apos;CarStage&apos;&#x0A;- Original project: &apos;Lecture4&apos;&#x0A;- Original element: &apos;MyComponent&apos;&#x0A;- Renamed element: &apos;CarStage&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MyComponent&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{MyComponent.java[MyComponent" matchStrategy="1" name="CarStage" qualified="false" references="true" similarDeclarations="false" stamp="1473790426572" textual="false" version="1.0"/>
+</session>

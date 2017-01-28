@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;MAXNumber&apos; in &apos;PrimeCounter&apos; to &apos;MAXNUMBER&apos;&#x0A;- Original project: &apos;PrimeCounter&apos;&#x0A;- Original element: &apos;PrimeCounter.MAXNumber&apos;&#x0A;- Renamed element: &apos;PrimeCounter.MAXNUMBER&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;MAXNumber&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;{PrimeCounter.java[PrimeCounter^MAXNumber" name="MAXNUMBER" references="true" setter="false" stamp="1474725909847" textual="false" version="1.0"/>
+</session>
